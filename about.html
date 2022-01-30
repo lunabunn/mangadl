@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>MangaDL - About</title>
+</head>
+<body>
+    <a href=".."><h2></h2></g2>← Back to main page</a>
+    <h1>MangaDL</h1>
+    <h2>What is this?</h2>
+    <p>A web downloader for manga hosted on <a href="https://shonenjumpplus.com/">Shonen Jump Plus</a>, <a href="https://www.sunday-webry.com/">Sunday Web Every</a>, and maybe others (the two use the same viewer).</p>
+    <h2>How does it work?</h2>
+    <p>Manga metadata and pages are loaded from their original servers through a CORS proxy (hosted on <a href="https://heroku.com">Heroku</a>). Then, the shuffling of the pages is undone using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">HTML5 Canvas API</a>. Unshuffled pages are zipped (in parallel, as the images are being loaded/processed!) using <a href="https://github.com/101arrowz/fflate/">fflate</a>. The resulting ZIP is saved using <a href="https://github.com/eligrey/FileSaver.js/">FileSaver.js</a>.</p>
+    <p>This means that all work happens in the client. Nothing is stored server-side.</p>
+    <h2>How about support for other sites?</h2>
+    <p>I may add support for other sites as I need it. In the meantime, you are more than welcome to create a <a href="https://github.com/lunabunn/mangadl/pulls">PR</a>.</p>
+</body>
+</html>

@@ -64,6 +64,7 @@ function load(url) {
                         .then(blob => {
                             let img = new Image();
                             img.onload = () => {
+                                context.drawImage(img, 0, 0);
                                 for (let y = 0; y < 4; y++) {
                                     for (let x = 0; x < 4; x++) {
                                         context.drawImage(img, x * chunkWidth, y * chunkHeight, chunkWidth, chunkHeight, y * chunkWidth, x * chunkHeight, chunkWidth, chunkHeight);
