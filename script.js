@@ -13,7 +13,7 @@ input.addEventListener("keydown", e => {
 });
 
 function proxyFetch(resource, options) {
-    const url = `https://lbproxy.herokuapp.com?url=${resource}`;
+    const url = `https://cors.iamrabbitmoon.workers.dev/?${resource}`;
     return fetch(url, options);
 }
 
